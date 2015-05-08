@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Usage: jeetou <mkvfile> <subtitle_track>
+
+mkv=$1
+subtitletrack=$2
+
+echo $mkv
+echo $subtitle_track
+
+if [ ! -f $mkv ]; then
+  echo "File '$mkv' is not found!"
+  exit 1
+fi
+
+if [ ! -n "$subtitletrack" ]; then
+  # subtitletrack is empty
+  echo "Please find the desired subtitle track by 'mkvinfo $mkv'"
+  exit 1
+fi
+
+# get the dimension of the video
+width=`mkvinfo $mkv | grep 'Pixel width' | cut -d " " -f 7`
+height=`mkvinfo $mkv | grep 'Pixel height' | cut -d " " -f 7`
+
+echo "Video dimension is ${width} x ${height}"
+
+# extract the subtitle and convert it to .ass
+mkvextract tracks $mkv $subtitletrack:${mkv}_subtitle.srt
+avconv -i ${mkv}_subtitle.srt ${mkv}_subtitle.ass -y
+
+# generate screenshot
+./gencmd ${mkv} ${mkv}_subtitle.ass ${width} ${height}
+bash gen_${mkv}_${mkv}_subtitle.ass.sh
+

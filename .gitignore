@@ -1,0 +1,14 @@
+*.ass
+*.srt
+*.png
+*.jpg
+*.mkv
+
+gen_*_*.sh
+gencmd
+genpng
+
+.DS_Store
+.appledouble
+*.swp
+*~
