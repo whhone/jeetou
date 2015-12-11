@@ -34,14 +34,14 @@ jeetou <<mkvfile>> <subtitle_track>
 ## How it works?
 ### Step 1: Generate the subtitle image
 ![Image of sameple 1]
-(http://whhone.com/blog/wp-content/uploads/2013/08/subtitle.png)
+(http://whhone.com/wp-content/uploads/2013/08/subtitle.png)
 
 ### Step 2: Take the screenshot from the video
 ![Image of sameple 1]
-(http://whhone.com/blog/wp-content/uploads/2013/08/raw.png)
+(http://whhone.com/wp-content/uploads/2013/08/raw.png)
 
 ### Step 3: Combine the above two images
 ![Image of sameple 1]
-(http://whhone.com/blog/wp-content/uploads/2013/08/combine.jpg)
+(http://whhone.com/wp-content/uploads/2013/08/combine.jpg)
 
 `jeetou` extracts the subtitle file and repeats the above three steps for each subtitle.
