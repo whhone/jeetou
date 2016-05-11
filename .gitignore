@@ -5,10 +5,10 @@
 *.mkv
 
 gen_*_*.sh
-gencmd
-genpng
+bin/*
 
 .DS_Store
 .appledouble
 *.swp
 *~
+

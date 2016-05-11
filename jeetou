@@ -30,6 +30,6 @@ mkvextract tracks $mkv $subtitletrack:${mkv}_subtitle.srt
 avconv -i ${mkv}_subtitle.srt ${mkv}_subtitle.ass -y
 
 # generate screenshot
-./gencmd ${mkv} ${mkv}_subtitle.ass ${width} ${height}
+./bin/gencmd ${mkv} ${mkv}_subtitle.ass ${width} ${height}
 bash gen_${mkv}_${mkv}_subtitle.ass.sh
 
