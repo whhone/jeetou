@@ -6,7 +6,7 @@ This is the tool building the screenshots behind <a href="http://jeetou.com/" ta
 ### Install the required packages
 ####Ubuntu:
 ```
-sudo apt-get install libav-tools libpng12-dev libass-dev
+sudo apt install libav-tools libpng12-dev libass-dev
 ```
 
 ####OSX:
