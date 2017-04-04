@@ -1,15 +1,15 @@
 ## Introduction
-This is the tool building the screenshots behind <a href="http://jeetou.com/" target="_blank">截圖道 (jeetou.com)</a>. Given a MKV video, it generates screenshots for every subtitle.  
+This is the tool building the screenshots behind [截圖道 (jeetou.com)](http://jeetou.com/). Given a MKV video, it generates screenshots for every subtitle.  
 
 ## Requirements
 
 ### Install the required packages
-####Ubuntu:
+#### Ubuntu:
 ```
 sudo apt install libav-tools libpng12-dev libass-dev
 ```
 
-####OSX:
+#### OSX:
 ```
 brew install libav libass 
 ```

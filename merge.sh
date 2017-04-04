@@ -15,4 +15,3 @@ raw_png=$mkv_source"raw.png"
 ./genpng ${subtitle_png} ${subtitle_source} ${second} ${width} ${height}
 avconv -ss ${lastsecond} -i ${mkv_source} -ss ${duration} ${raw_png}
 convert ${raw_png} ${subtitle_png} -composite -format jpg -quality 90 "${second}.jpg"
-
